@@ -1,0 +1,106 @@
+[33mcommit 67ece29706cfc249fcac087bfb325fac70692b27[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: abhigyacse18 <rajput.abhigya183@gmail.com>
+Date:   Thu Jun 11 23:19:50 2026 +0530
+
+    Initial commit
+
+ Exp 11/student/.gitattributes                      |    2 [32m+[m
+ Exp 11/student/.gitignore                          |   33 [32m+[m
+ .../student/.mvn/wrapper/maven-wrapper.properties  |    3 [32m+[m
+ Exp 11/student/mvnw                                |  295 [32m+++[m
+ Exp 11/student/mvnw.cmd                            |  189 [32m++[m
+ Exp 11/student/pom.xml                             |   54 [32m+[m
+ .../src/main/java/com/example/student/Student.java |   42 [32m+[m
+ .../com/example/student/StudentApplication.java    |   17 [32m+[m
+ .../com/example/student/StudentController.java     |   37 [32m+[m
+ .../src/main/resources/application.properties      |    1 [32m+[m
+ .../example/student/StudentApplicationTests.java   |   13 [32m+[m
+ Exp 12/.DS_Store                                   |  Bin [31m0[m -> [32m8196[m bytes
+ Exp 12/employeeapi/.gitattributes                  |    2 [32m+[m
+ Exp 12/employeeapi/.gitignore                      |   33 [32m+[m
+ .../.mvn/wrapper/maven-wrapper.properties          |    3 [32m+[m
+ Exp 12/employeeapi/mvnw                            |  295 [32m+++[m
+ Exp 12/employeeapi/mvnw.cmd                        |  189 [32m++[m
+ Exp 12/employeeapi/pom.xml                         |   67 [32m+[m
+ .../employeeapi/EmployeeapiApplication.java        |   12 [32m+[m
+ .../employeeapi/controller/EmployeeController.java |   48 [32m+[m
+ .../com/example/employeeapi/model/Employee.java    |   58 [32m+[m
+ .../employeeapi/repository/EmployeeRepository.java |    9 [32m+[m
+ .../employeeapi/service/EmployeeService.java       |   37 [32m+[m
+ .../src/main/resources/application.properties      |   10 [32m+[m
+ .../employeeapi/EmployeeapiApplicationTests.java   |   13 [32m+[m
+ Exp10/BankAccount.class                            |  Bin [31m0[m -> [32m1808[m bytes
+ Exp10/BankManagementSystem.class                   |  Bin [31m0[m -> [32m946[m bytes
+ Exp10/BankManagementSystem.java                    |   97 [32m+[m
+ Exp10/CurrentAccount.class                         |  Bin [31m0[m -> [32m1012[m bytes
+ Exp10/SavingsAccount.class                         |  Bin [31m0[m -> [32m1012[m bytes
+ bootrap-experiment1.html                           |   37 [32m+[m
+ demo.html                                          |   24 [32m+[m
+ exp-7/exp-7/.gitignore                             |   24 [32m+[m
+ exp-7/exp-7/README.md                              |   16 [32m+[m
+ exp-7/exp-7/eslint.config.js                       |   21 [32m+[m
+ exp-7/exp-7/index.html                             |   13 [32m+[m
+ exp-7/exp-7/package-lock.json                      | 2424 [32m++++++++++++++++++++[m
+ exp-7/exp-7/package.json                           |   27 [32m+[m
+ exp-7/exp-7/public/favicon.svg                     |    1 [32m+[m
+ exp-7/exp-7/public/icons.svg                       |   24 [32m+[m
+ exp-7/exp-7/src/App.css                            |  184 [32m++[m
+ exp-7/exp-7/src/App.jsx                            |   15 [32m+[m
+ exp-7/exp-7/src/Greeting.jsx                       |    9 [32m+[m
+ exp-7/exp-7/src/assets/hero.png                    |  Bin [31m0[m -> [32m13057[m bytes
+ exp-7/exp-7/src/assets/react.svg                   |    1 [32m+[m
+ exp-7/exp-7/src/assets/vite.svg                    |    1 [32m+[m
+ exp-7/exp-7/src/components/Header.jsx              |    9 [32m+[m
+ exp-7/exp-7/src/components/Studentcard.jsx         |    9 [32m+[m
+ exp-7/exp-7/src/index.css                          |  111 [32m+[m
+ exp-7/exp-7/src/main.jsx                           |   10 [32m+[m
+ exp-7/exp-7/vite.config.js                         |    7 [32m+[m
+ exp-8/exp-8/.gitignore                             |   24 [32m+[m
+ exp-8/exp-8/README.md                              |   16 [32m+[m
+ exp-8/exp-8/eslint.config.js                       |   21 [32m+[m
+ exp-8/exp-8/index.html                             |   13 [32m+[m
+ exp-8/exp-8/package-lock.json                      | 2424 [32m++++++++++++++++++++[m
+ exp-8/exp-8/package.json                           |   27 [32m+[m
+ exp-8/exp-8/public/favicon.svg                     |    1 [32m+[m
+ exp-8/exp-8/public/icons.svg                       |   24 [32m+[m
+ exp-8/exp-8/src/App.css                            |   89 [32m+[m
+ exp-8/exp-8/src/App.jsx                            |   44 [32m+[m
+ exp-8/exp-8/src/assets/hero.png                    |  Bin [31m0[m -> [32m13057[m bytes
+ exp-8/exp-8/src/assets/react.svg                   |    1 [32m+[m
+ exp-8/exp-8/src/assets/vite.svg                    |    1 [32m+[m
+ exp-8/exp-8/src/index.css                          |  111 [32m+[m
+ exp-8/exp-8/src/main.jsx                           |   10 [32m+[m
+ exp-8/exp-8/vite.config.js                         |    7 [32m+[m
+ exp-9/exp-9/.gitignore                             |   24 [32m+[m
+ exp-9/exp-9/README.md                              |   16 [32m+[m
+ exp-9/exp-9/eslint.config.js                       |   21 [32m+[m
+ exp-9/exp-9/index.html                             |   13 [32m+[m
+ exp-9/exp-9/package-lock.json                      | 2424 [32m++++++++++++++++++++[m
+ exp-9/exp-9/package.json                           |   27 [32m+[m
+ exp-9/exp-9/public/favicon.svg                     |    1 [32m+[m
+ exp-9/exp-9/public/icons.svg                       |   24 [32m+[m
+ exp-9/exp-9/src/App.css                            |  184 [32m++[m
+ exp-9/exp-9/src/App.jsx                            |  266 [32m+++[m
+ exp-9/exp-9/src/assets/hero.png                    |  Bin [31m0[m -> [32m13057[m bytes
+ exp-9/exp-9/src/assets/react.svg                   |    1 [32m+[m
+ exp-9/exp-9/src/assets/vite.svg                    |    1 [32m+[m
+ exp-9/exp-9/src/index.css                          |  111 [32m+[m
+ exp-9/exp-9/src/main.jsx                           |   10 [32m+[m
+ exp-9/exp-9/vite.config.js                         |    7 [32m+[m
+ exp4.css                                           |   40 [32m+[m
+ exp4.html                                          |   36 [32m+[m
+ exp4.js                                            |   38 [32m+[m
+ experiment5.css                                    |   40 [32m+[m
+ experiment5.html                                   |   38 [32m+[m
+ experiment5.js                                     |   85 [32m+[m
+ experiment6.css                                    |   69 [32m+[m
+ experiment6.html                                   |   44 [32m+[m
+ experiment6.js                                     |   44 [32m+[m
+ listner.html                                       |   30 [32m+[m
+ listner.js                                         |    0
+ project.html                                       |  208 [32m++[m
+ project1.html                                      |   48 [32m+[m
+ webd.css                                           |   31 [32m+[m
+ webd.html                                          |   24 [32m+[m
+ webd.js                                            |    9 [32m+[m
+ 99 files changed, 11253 insertions(+)
