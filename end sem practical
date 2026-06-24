@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Mark & Grade Calculator</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    width:400px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#4CAF50;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#45a049;
+}
+
+.result{
+    margin-top:20px;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Student Grade Calculator</h2>
+
+    <input type="number" id="sub1" placeholder="Enter Marks of Subject 1">
+    <input type="number" id="sub2" placeholder="Enter Marks of Subject 2">
+    <input type="number" id="sub3" placeholder="Enter Marks of Subject 3">
+    <input type="number" id="sub4" placeholder="Enter Marks of Subject 4">
+    <input type="number" id="sub5" placeholder="Enter Marks of Subject 5">
+
+    <button onclick="calculateResult()">Calculate Result</button>
+
+    <div class="result" id="result"></div>
+</div>
+
+<script>
+function calculateResult(){
+
+    let s1 = Number(document.getElementById("sub1").value);
+    let s2 = Number(document.getElementById("sub2").value);
+    let s3 = Number(document.getElementById("sub3").value);
+    let s4 = Number(document.getElementById("sub4").value);
+    let s5 = Number(document.getElementById("sub5").value);
+
+    let total = s1 + s2 + s3 + s4 + s5;
+    let percentage = total / 5;
+
+    let grade;
+
+    if(percentage >= 90){
+        grade = "A+";
+    }
+    else if(percentage >= 80){
+        grade = "A";
+    }
+    else if(percentage >= 70){
+        grade = "B";
+    }
+    else if(percentage >= 60){
+        grade = "C";
+    }
+    else if(percentage >= 50){
+        grade = "D";
+    }
+    else{
+        grade = "F";
+    }
+
+    document.getElementById("result").innerHTML =
+    `Total Marks: ${total}/500 <br>
+     Percentage: ${percentage.toFixed(2)}% <br>
+     Grade: ${grade}`;
+}
+</script>
+
+</body>
+</html>
